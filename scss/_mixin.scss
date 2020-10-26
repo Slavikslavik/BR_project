@@ -1,0 +1,14 @@
+@mixin title{
+    color: #262626;
+    font-family: "Raleway - Heavy";
+    font-size: 60px;
+    font-weight: 400;
+    text-align: left;
+}
+@mixin paragraph{
+    color: #262626;
+    font-family: $font_raleway;
+    font-size: 17px;
+    font-weight: 300;
+    text-align: left;
+}
