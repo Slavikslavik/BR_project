@@ -91,7 +91,6 @@ body {
   height: 640px;
   width: 50%;
   background-repeat: no-repeat;
-  background-size: cover;
 }
 .about-us__content {
   width: 50%;
@@ -761,6 +760,7 @@ body {
 
   .about-us__img {
     background-image: url(../img/imgx2/aboutUs_bg_x2@2x.png);
+    background-size: contain;
   }
 
   .content-bg {
