@@ -98,12 +98,12 @@
     &__img{
         background-image:url(../img/section_about_us_bg.png) ;
         height: 640px;
-        width: 50%;
+        width: 70%;
         background-repeat: no-repeat;
         
     }
     &__content{
-        width: 50%;
+        width: 44%;
     }
     &__title{
         width: 67%;
@@ -284,7 +284,6 @@
         }   
     }
     &-btn{
-        width: 100px;
         margin: 0 auto;
         margin-top: 50px;
         &__button{
@@ -303,10 +302,9 @@
     }
 }
 .subscribe{
-    height: 500px;
-    width: 100%;
+    padding: 50px;
     background-image: url(../img/bg_subscribe_to_you.png);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -314,20 +312,13 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-
-    &__tous{
-        width: 100%;
-        margin-left: 11%;
-    }
-    
     &__title{
-        width: 305px;
         color: #262626;
         font-family: $font_raleway;
         font-size: 40px;
         font-weight: 700;
         font-style: normal;
-        text-align: right;
+        
     }
     &__paragraph{
         width: 42%;
@@ -375,6 +366,7 @@
             justify-content: center;
     &-header{
         margin-top: 100px;
+        display: contents;
         &__title{
             color: #ffffff;
             font-family: $font_raleway;
@@ -670,6 +662,7 @@
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
+                padding: 0 20px;
         &--big_img{
             width: 100%;
             margin: 0 auto;
@@ -686,15 +679,16 @@
         .double_img-1,
         .double_img-2{
             width: 40%;
+            
         }
         .gallery-content__block--equally_1{
             margin: 0 auto;
             margin-bottom: 30px;
-            width: 100%;
+            width: 60%;
         }
         .gallery-content__block--equally_2{
             margin: 0 auto;
-            width: 100%;
+            width: 60%;
         
             
         }
@@ -719,18 +713,6 @@
         &__first_p{
             font-size: 12px;
         }
-    }
-    .subscribe-input{
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-    }
-    .subscribe-btn{
-        margin-left: 0;
     }
 }
 
@@ -841,6 +823,14 @@
     .contact-form__btn{
         width: 70%;
     }
+    .subscribe{
+        height: auto;
+        width: auto;
+        background-image: url(../img/bg_subscribe_to_you.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding:20px;
+    }
 
 }
 
@@ -861,14 +851,29 @@
         }
         &-content{
             &__title{
-                font-size: 20px;
+                font-size: 34px;
+                
             }
             &__paragraph{
                 font-size: 10px;
+                width: 50%;
             }
             &__btn{
                 height: auto;
+                width: 35%;
+                font-size: 15px;
+            
             }
+        }
+    }
+    .about-us{
+        flex-direction: column;
+    
+        &__content {
+            width: 80%;
+        }
+        &__title{
+            text-align: center;
         }
     }
     .about-us__paragraph{
@@ -881,8 +886,42 @@
         background-size: contain;
         height: 407px;
     }
+    .double_img-1,
+    .double_img-2{
+        background-position-x: -50px;
+        width: 50%;
+    }
+    .gallery__header{
+        width: 80%;
+    }
+    .gallery__title {
+        font-size: 50px;
+    }
+    .gallery-content__block--equally_1{
+        width: 90%;
+    }
+    .gallery-content__block--equally_2{
+        width: 90%;
+    }
     .subscribe{
-        background-position-y: center;
+        background-position-x: -285px;
+    }
+    .blog-header__paragraph{
+        width: 80%;
+    }
+    .contact{
+        height: auto;
+        &-main{
+        flex-direction: column;
+        align-items: center;
+        }
+        &-form{
+            width: 90%;
+        }
+        &-adress{
+            display: flex;
+            width: auto;
+        }
     }
 }
 
@@ -891,14 +930,12 @@
     .header{
         background-image: url(../img/imgx2/header_bg_x2@2x.png);
     }
-    .about-us__img{
-        background-image: url(../img/imgx2/aboutUs_bg_x2@2x.png);
-        background-size: contain;
-    }
     .content-bg{
         background-image: url(../img/imgx2/our_services_bg_x2@2x.png);
     }
     .subscribe{
         background-image: url(../img/imgx2/subscribe_bg_x2@2x.png);
+        background-position-x: -100px;
+        background-size: cover;
     }
 }
