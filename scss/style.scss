@@ -441,7 +441,7 @@
             position: relative;
             top: 141px;
             left: 43px;
-            right: 43px;
+            /*right: 43px;*/
             bottom: 23px;
         }
         &__first_p{
@@ -925,6 +925,72 @@
     }
 }
 
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px) {
+    .header-content {
+        margin-left: 10px;
+        margin-top: auto;
+        &__paragraph{
+            font-size: 15px;
+            width: 90%;
+        }
+    }
+    .content{
+            padding: 20px;
+    }
+    .our-services .content-bg{
+              
+                display: block;
+                background-image: none;
+                height: auto;
+                &__text{
+                    font-size: 30px;
+                    margin-top: 50px;
+                }
+    }
+    .gallery-content__block--big_img{
+        height: 227px;
+        width: 85%;
+    }
+    .gallery-content__block--double_img{
+        flex-direction: column;
+        align-items: center;
+
+        .double_img-1,
+        .double_img-2{
+            width: 85%;
+        }
+
+    }
+    .gallery-content__block .gallery-content__block--equally_1 {
+        width: 85%;
+        background-size: contain;
+        margin-top: 30px;
+        height: 220px;
+    }
+    .gallery-content__block .gallery-content__block--equally_2{
+        width: 85%;
+        background-size: contain;
+        height: 220px;
+    }
+    .subscribe{
+        background-size: 170%;
+        background-position-x: -200px;
+        background-position-y: center;
+    }
+    .blog-header__paragraph{
+        text-align: center;
+        width: 90%;
+     } 
+    .contact-adress{
+        display: block;
+    }
+    .blog-main__text{
+        width: fit-content;
+    }
+}
+
 
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) { 
     .header{
@@ -935,7 +1001,6 @@
     }
     .subscribe{
         background-image: url(../img/imgx2/subscribe_bg_x2@2x.png);
-        background-position-x: -100px;
-        background-size: cover;
+
     }
 }
